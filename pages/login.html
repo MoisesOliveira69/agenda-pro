@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - AgendaPro</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/Projetos/Site_AgendaPro/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>AgendaPro</h1></div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="form-section">
+      <h2>Entrar na sua conta</h2>
+      <p>Acesse sua conta para gerenciar seus agendamentos.</p>
+      <form class="form-container" onsubmit="return redirecionarPainel(event)">
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit" class="btn btn-glow">Entrar</button>
+      </form>
+      <p style="margin-top:1rem;">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AgendaPro - Todos os direitos reservados</p>
+    <ul class="footer-links">
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </footer>
+
+  <!-- Script de redirecionamento -->
+  <script>
+    function redirecionarPainel(event) {
+      event.preventDefault(); // impede envio real do formulário
+      // Aqui você poderia validar os dados se quisesse
+      window.location.href = "painel.html"; // redireciona para o painel
+      return false;
+    }
+  </script>
+</body>
+</html>

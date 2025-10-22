@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Serviço - AgendaPro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="/Projetos/Site_AgendaPro/images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>AgendaPro</h1></div>
+        <ul class="nav-links">
+        <li><a href="painel.html">Retornar</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-gradient" style="padding:2.5rem 2rem;">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Cadastrar novo serviço</h2>
+          <p>Adicione um serviço à sua agenda.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <form class="form-container">
+        <input type="text" placeholder="Nome do serviço" required />
+        <textarea placeholder="Descrição do serviço" rows="4" required></textarea>
+        <input type="number" placeholder="Duração (minutos)" required />
+        <input type="text" placeholder="Preço (ex.: R$ 120,00)" required />
+        <input type="url" placeholder="Imagem do serviço (opcional)" />
+        <button type="submit" class="btn btn-glow">Cadastrar serviço</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgendaPro - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel - AgendaPro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="/Projetos/Site_AgendaPro/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2e0e6ad5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>AgendaPro</h1></div>
+      <div class="nav-cta">
+        <a href="cadastrar_servico.html" class="btn btn-glow">Novo agendamento</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero-gradient" style="padding:2.5rem 2rem;">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Bem-vindo ao seu painel</h2>
+          <p>Acompanhe seus atendimentos, clientes e estatísticas em tempo real.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resumo -->
+    <section class="resumo">
+      <h3>Resumo</h3>
+      <div class="resumo-container">
+        <div class="resumo-item hoje">
+          <i class="fas fa-calendar-day"></i>
+          <div>
+            <h4>Hoje</h4>
+            <p><strong>5</strong> atendimentos</p>
+            <small>Última atualização: agora</small>
+          </div>
+        </div>
+        <div class="resumo-item semana">
+          <i class="fas fa-calendar-week"></i>
+          <div>
+            <h4>Semana</h4>
+            <p><strong>28</strong> confirmados</p>
+            <small>Taxa de confirmação: 92%</small>
+          </div>
+        </div>
+        <div class="resumo-item faltas">
+          <i class="fas fa-user-times"></i>
+          <div>
+            <h4>Faltas</h4>
+            <p><strong>2</strong> não comparecimentos</p>
+            <small>Lembretes enviados</small>
+          </div>
+        </div>
+        <div class="resumo-item clientes">
+          <i class="fas fa-user-plus"></i>
+          <div>
+            <h4>Novos clientes</h4>
+            <p><strong>7</strong> esta semana</p>
+            <small>Origem: link público</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Próximos agendamentos -->
+    <section class="proximos">
+      <h3>Próximos agendamentos</h3>
+      <ul class="timeline">
+        <li>
+          <div class="hora">09:00</div>
+          <div class="detalhes">
+            <h4>Ana Souza</h4>
+            <p>Avaliação inicial — Online (Meet)</p>
+          </div>
+        </li>
+        <li>
+          <div class="hora">10:30</div>
+          <div class="detalhes">
+            <h4>Carlos Lima</h4>
+            <p>Treino funcional — Presencial</p>
+          </div>
+        </li>
+        <li>
+          <div class="hora">14:00</div>
+          <div class="detalhes">
+            <h4>Clínica Vitta</h4>
+            <p>Consultoria — Zoom</p>
+          </div>
+        </li>
+        <li>
+          <div class="hora">16:00</div>
+          <div class="detalhes">
+            <h4>Luana Alves</h4>
+            <p>Terapia — Presencial</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Serviços cadastrados -->
+    <section>
+      <h3>Serviços cadastrados</h3>
+      <div class="casos-container">
+        <div class="caso">
+          <img src="https://#" alt="Consulta">
+          <h4>Consulta Inicial</h4>
+          <p>Duração: 60 min • R$ 120,00</p>
+          <a href="servico-consulta.html" class="btn">Ver página do serviço</a>
+        </div>
+        <div class="caso">
+          <img src="https://#" alt="Treino">
+          <h4>Treino Funcional</h4>
+          <p>Duração: 45 min • R$ 80,00</p>
+          <a href="servico-treino.html" class="btn">Ver página do serviço</a>
+        </div>
+      </div>
+      <div style="margin-top:2rem;">
+        <a href="cadastrar_servico.html" class="btn btn-glow">Cadastrar novo serviço</a>
+        <a href="agendamentos_clientes.html" class="btn">Ver todos os agendamentos</a>
+      </div>
+    </section>
+
+    <!-- Links rápidos -->
+    <section class="links-rapidos">
+      <h3>Links rápidos</h3>
+      <div class="links-container">
+        <a href="#" class="link-item" onclick="copiarLink()">
+          <i class="fas fa-link"></i>
+          <span>Link público</span>
+        </a>
+        <a href="preferencias.html" class="link-item">
+          <i class="fas fa-sliders-h"></i>
+          <span>Preferências</span>
+        </a>
+        <a href="clientes.html" class="link-item">
+          <i class="fas fa-users"></i>
+          <span>Clientes</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AgendaPro - Todos os direitos reservados</p>
+    <ul class="footer-links">
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function copiarLink() {
+      const link = "https://agenda.pro/seu-link-publico";
+      navigator.clipboard.writeText(link).then(() => {
+        alert("Link copiado para a área de transferência!");
+      });
+    }
+  </script>
+</body>
+</html>

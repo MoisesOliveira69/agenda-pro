@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preferências - AgendaPro</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/Projetos/Site_AgendaPro/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><h1>AgendaPro</h1></div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="hero-gradient" style="padding:2.5rem 2rem;">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Preferências</h2>
+          <p>Configure sua agenda, notificações e regras de funcionamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configurações -->
+    <section class="form-section">
+      <h3>Configurações de agenda</h3>
+      <form class="form-container">
+        <label>Intervalo entre atendimentos</label>
+        <input type="number" value="30"> minutos
+
+        <label>Horário de início</label>
+        <input type="time" value="08:00">
+
+        <label>Horário de término</label>
+        <input type="time" value="18:00">
+
+        <label>Máximo de atendimentos por dia</label>
+        <input type="number" value="10">
+
+        <button type="submit" class="btn btn-glow">Salvar preferências</button>
+      </form>
+    </section>
+
+    <!-- Notificações -->
+    <section class="form-section">
+      <h3>Notificações</h3>
+      <form class="form-container">
+        <label>Mensagem de confirmação</label>
+        <textarea rows="3">Sua consulta está confirmada!</textarea>
+
+        <label>Mensagem de lembrete</label>
+        <textarea rows="3">Lembrete: você tem um atendimento amanhã às [hora].</textarea>
+
+        <button type="submit" class="btn btn-glow">Salvar notificações</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 AgendaPro - Todos os direitos reservados</p>
+    <ul class="footer-links">
+      <li><a href="#">Termos de uso</a></li>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
