@@ -20,7 +20,8 @@
 
 | Painel do Prestador 
 |---------------------|-------------------|--------------|
-| ![Painel](https://moisesoliveira69.github.io/agenda-pro/)
+[Painel] :
+(https://moisesoliveira69.github.io/agenda-pro/)
 
 ## 🛠️ Tecnologias Utilizadas
 
