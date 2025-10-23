@@ -18,11 +18,9 @@
 
 ## 🖼️ Interface
 
-| Painel do Prestador | Página de Serviço | Agendamentos |
+| Painel do Prestador 
 |---------------------|-------------------|--------------|
-| ![Painel](https://via.placeholder.com/300x180?text=Painel) | ![Serviço](https://via.placeholder.com/300x180?text=Serviço) | ![Agendamentos](https://via.placeholder.com/300x180?text=Agendamentos) |
-
----
+| ![Painel](https://moisesoliveira69.github.io/agenda-pro/)
 
 ## 🛠️ Tecnologias Utilizadas
 
